@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charest="UTF-8">
+    <meta name="description"content="This is an awesome website">
+    <head>
+    <title>Email Validation Check </title>
+    <!--main Template css File-->
+    <link rel="stylesheet" type="text/css" href="style.css3.css"/>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins',sans-serif;
+      }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #373737;
+      }
+      h3{
+        position: relative;
+        font-size: 20px;
+        color:#f9f9f9;
+        letter-spacing: 1px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      #form{
+        position: relative;
+      }
+      #form #email{
+        width: 300px;
+        background: #292929;
+        outline: none;
+        border: none;
+        padding:10px;
+        border-radius: 6px;
+        color:#fff;
+        font-style: 18px;
+      }
+      #form .inputBox{
+      position: relative;
+      }
+      #text
+      {
+        display: block;
+        color: #000;
+        font-weight: 300;
+        font-style: italic;
+        padding: 5px;
+      }
+      #form.invalid .inputBox:before
+      {
+        content: '';
+        position: absolute;
+        right: 12px;
+        top:9px;
+        width:24px;
+        height:24px;
+        background: url(https://img.icons8.com/color/512/cancel.png);
+        background-size: cover;
+        z-index: 1000;
+      }
+      #form.valid .inputBox:before
+      {
+        content: '';
+        position: absolute;
+        right: 12px;
+        top:9px;
+        width:24px;
+        height:24px;
+        background: url(https://img.icons8.com/color/512/verified-account.png);
+        background-size: cover;
+        z-index: 1000;
+
+      }
+    </style>
+    </head>
+    <body>
+      <div>
+        <h3 style="font-family: 'Times New Roman', Times, serif;font-weight: 600;">Email Validation  Check:</h3>
+        <br>
+        <form id="form" action="#">
+          <div class="inputBox">
+            <input type="text" name="" id="email"
+            placeholder="Enter Email Address" onkeydown="
+            validation()">
+            <span id="text"></span>
+          </div>
+        </form>
+        <br> 
+        <form id="form" action="#">
+          <div class="inputBox">
+            <input type="Password" name="" id="email"
+            placeholder=" Please Enter Your Password">
+            <span id="text"></span>
+          </div>
+        </form>
+      </div> 
+            <script src="main.js"></script>
+          </body>
+        </html>
+   
